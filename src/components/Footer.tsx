@@ -1,6 +1,7 @@
 import React from 'react'
 import appConfig from '../config/appConfig'
 import { Mail, Linkedin, Twitter } from 'lucide-react'
+import logoImage from '../assets/logo.png'
 
 export default function Footer(){
   return (
@@ -9,7 +10,7 @@ export default function Footer(){
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src={appConfig.logoPath} alt="logo" className="h-10 w-10" />
+              <img src={logoImage} alt="logo" className="h-10 w-10" />
               <div className="text-sm font-bold">{appConfig.companyName}</div>
             </div>
             <p className="text-xs text-gray-400">AI-driven financial close automation for enterprises.</p>
