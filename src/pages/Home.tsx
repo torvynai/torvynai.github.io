@@ -7,7 +7,7 @@ import appConfig from '../config/appConfig'
 
 export default function Home(){
   useEffect(() => {
-      document.title = `${appConfig.productName} | ${appConfig.companyName} - The Ultimate Automation Provider`
+      document.title = 'Torvyn AI - The Ultimate Automation Provider'
   }, [])
 
   return (

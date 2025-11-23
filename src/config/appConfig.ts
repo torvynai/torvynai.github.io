@@ -1,6 +1,6 @@
 const appConfig = {
-  companyName: 'Torvyn AI Private Limited',
-  productName: 'Torvyn Financial Close Automation (FCA) Agentic Platfrom',
+  companyName: 'Torvyn AI',
+  productName: 'Torvyn AI',
   logoPath: '/assets/logo.png',
   contactEmail: 'torvynai@gmail.com',
   websiteUrl: 'https://www.torvynai.com'
