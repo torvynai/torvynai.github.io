@@ -9,6 +9,16 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'logo.png') {
+            return 'assets/logo.png';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    }
   }
 })
