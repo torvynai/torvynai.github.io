@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import appConfig from '../config/appConfig'
-import logoImage from '../assets/logo.png'
+
+const logoImage = '/assets/logo.png'
 
 export default function Navbar(){
   const location = useLocation()

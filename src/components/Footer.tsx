@@ -1,7 +1,8 @@
 import React from 'react'
 import appConfig from '../config/appConfig'
 import { Mail, Linkedin, Twitter } from 'lucide-react'
-import logoImage from '../assets/logo.png'
+
+const logoImage = '/assets/logo.png'
 
 export default function Footer(){
   return (
