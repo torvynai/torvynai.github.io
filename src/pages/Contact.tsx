@@ -6,7 +6,7 @@ import appConfig from '../config/appConfig'
 
 export default function Contact(){
   useEffect(() => {
-    document.title = `Contact Us | ${appConfig.companyName}`
+    document.title = `Contact Us | ${appConfig.companyName} - The Ultimate Automation Provider`
   }, [])
 
   const [form, setForm] = useState({name:'', email:'', company:'', message:''})

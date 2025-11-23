@@ -6,7 +6,7 @@ import appConfig from '../config/appConfig'
 
 export default function Product(){
   useEffect(() => {
-    document.title = `Product | ${appConfig.companyName}`
+      document.title = `Product | ${appConfig.companyName} - The Ultimate Automation Provider`
   }, [])
 
   return (
@@ -14,7 +14,7 @@ export default function Product(){
       {/* Hero */}
       <section className="bg-gradient-to-br from-secondary to-primary/10 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Torvyn Financial Close Automation (TFCA)</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Torvyn Financial Close Automation (FCA)</h1>
           <p className="text-xl text-gray-200 max-w-3xl">An AI-powered enterprise platform built to streamline financial close processes, automate reconciliations, and provide explainable AI insights for finance leaders.</p>
         </div>
       </section>

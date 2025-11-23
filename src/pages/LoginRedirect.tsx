@@ -3,7 +3,7 @@ import appConfig from '../config/appConfig'
 
 export default function LoginRedirect(){
   useEffect(() => {
-    document.title = `Platform Login | ${appConfig.companyName}`
+    document.title = `Platform Login | ${appConfig.companyName} - The Ultimate Automation Provider`
   }, [])
   return (
     <div className="container py-24 flex items-center justify-center">
