@@ -196,7 +196,7 @@ Edit `src/config/appConfig.ts`:
 ```typescript
 const appConfig = {
   companyName: 'Torvyn AI Private Limited',
-  productName: 'Torvyn Financial Close Automation (TFCA)',
+  productName: 'Torvyn Financial Close Automation (FCA)',
   logoPath: '/assets/logo.png',      // ← UPDATE when you add logo
   contactEmail: 'torvynai@gmail.com',  // ← UPDATE your email
   websiteUrl: 'https://torvyn.ai'      // ← UPDATE your domain
