@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { CheckCircle2, Zap, Shield, Lightbulb } from 'lucide-react'
 import { motion } from 'framer-motion'
+import shivamKumarImg from '../assets/shivam_kumar.jpeg';
+import yogendraImg from '../assets/yogendra.jpeg';
 
 export default function About(){
   useEffect(() => {
@@ -37,7 +39,7 @@ export default function About(){
           <h2 className="text-3xl font-bold mb-8 text-white">Leadership Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div whileHover={{y:-6}} className="bg-midnight p-6 rounded-xl shadow-md border border-white/5 text-center">
-              <img src="/src/assets/shivam_kumar.jpeg" alt="Shivam Kumar" className="w-20 h-20 rounded-full mb-4 mx-auto object-cover" />
+              <img src={shivamKumarImg} alt="Shivam Kumar" className="w-20 h-20 rounded-full mb-4 mx-auto object-cover" />
               <h4 className="font-bold text-lg mb-1 text-white">Shivam Kumar</h4>
               <p className="text-sm text-slate">Founder, CEO & Chief Technology Officer</p>
               <div className="text-xs text-center mt-4 text-slate space-y-1">
@@ -47,7 +49,7 @@ export default function About(){
               </div>
             </motion.div>
             <motion.div whileHover={{y:-6}} className="bg-midnight p-6 rounded-xl shadow-md border border-white/5 text-center">
-              <img src="/src/assets/yogendra.jpeg" alt="Yogendra" className="w-20 h-20 rounded-full mb-4 mx-auto object-cover" />
+              <img src={yogendraImg} alt="Yogendra" className="w-20 h-20 rounded-full mb-4 mx-auto object-cover" />
               <h4 className="font-bold text-lg mb-1 text-white">Yogendra</h4>
               <p className="text-sm text-slate">Head of Product</p>
               <div className="text-xs text-center mt-4 text-slate space-y-1">

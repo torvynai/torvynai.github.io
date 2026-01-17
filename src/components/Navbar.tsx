@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import logoImage from '../assets/logo.png';
 import appConfig from '../config/appConfig';
-
-const logoImage = '/src/assets/logo.png';
 
 export default function Navbar() {
   const location = useLocation();

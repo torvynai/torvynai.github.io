@@ -1,9 +1,7 @@
-import React from 'react'
-import appConfig from '../config/appConfig'
-import { Mail, Phone } from 'lucide-react'
-import { Link } from 'react-router-dom'
-
-const logoImage = '/src/assets/logo.png';
+import logoImage from '../assets/logo.png';
+import appConfig from '../config/appConfig';
+import { Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer(){
   return (

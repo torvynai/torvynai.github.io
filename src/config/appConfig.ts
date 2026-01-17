@@ -10,7 +10,7 @@ export type ProductInfo = {
 const appConfig = {
   companyName: 'Torvyn AI',
   productName: 'Torvyn AI',
-  logoPath: '/src/assets/logo.png',
+  logoPath: '/assets/logo.png',
   contactEmail: 'torvynai@gmail.com',
   phone: '+91-9027167486',
   websiteUrl: 'https://www.torvynai.com',
