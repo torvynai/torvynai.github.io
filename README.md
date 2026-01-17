@@ -1,4 +1,4 @@
-# Torvyn Website
+# Torvyn AI Website
 
 This repository contains the Torvyn AI marketing website built with Vite, React, TypeScript, and Tailwind CSS.
 
