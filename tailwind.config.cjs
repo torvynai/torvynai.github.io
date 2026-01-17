@@ -6,10 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0040ff',
-        secondary: '#050b20',
-        accent: '#00ccff',
-        surface: '#f8fafc'
+        midnight: '#041026',
+        'midnight-light': '#07162a',
+        primary: '#10b981',
+        success: '#10b981',
+        slate: '#94a3b8',
+        secondary: '#cfe9ff'
+      },
+      backgroundColor: {
+        'glass': 'rgba(255,255,255,0.04)'
       }
     }
   },

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
-import Product from '../pages/Product'
+import ProductsPage from '../pages/Products'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import LoginRedirect from '../pages/LoginRedirect'
@@ -10,15 +10,15 @@ import Footer from '../components/Footer'
 
 export default function Router() {
   return (
-    <div className="min-h-screen flex flex-col bg-surface">
+    <div className="min-h-screen flex flex-col bg-midnight">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<LoginRedirect />} />
+          <Route path="/loginredirect" element={<LoginRedirect />} />
         </Routes>
       </main>
       <Footer />

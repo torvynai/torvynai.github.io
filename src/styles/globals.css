@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 :root{
-  --primary: #0040ff;
-  --secondary: #050b20;
-  --accent: #00ccff;
-  --surface: #f8fafc;
+  --midnight: #041026; /* Deep Midnight Blue */
+  --midnight-light: #07162a; /* Lighter Midnight Blue */
+  --primary: #10b981; /* Success Green - Matching Tailwind */
+  --success: #10b981; /* Success Green */
+  --slate: #6b7280; /* Slate Gray */
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.06);
 }
 
 html,body,#root{
@@ -14,9 +17,38 @@ html,body,#root{
 }
 
 body{
-  background:var(--surface);
-  color:var(--secondary);
+  background: var(--midnight);
+  color: #e6eef8;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 .container{max-width:1200px;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+
+/* Professional Card - Less Glass, More Solid */
+.glass-card{
+  background: rgba(7, 22, 42, 0.6); /* Darker, more solid */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.trust-badge{
+  display:inline-flex;align-items:center;gap:0.6rem;padding:0.45rem 0.65rem;border-radius:0.4rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);font-weight:600;color:#e6eef8;font-size:0.85rem
+}
+
+.iit-advantage{
+  background: #020b1a;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+  font-weight:600;
+  font-size:0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Utility colors using CSS variables for consistency */
+/* Removed conflicting classes to let Tailwind config take precedence */
+
