@@ -33,6 +33,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List dist directory
+        run: ls -R dist
+
+      - name: Check file permissions
+        run: ls -la dist
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
