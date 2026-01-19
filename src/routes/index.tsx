@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 export default function Router() {
   return (
-    <div className="min-h-screen flex flex-col bg-midnight">
+    <div className="min-h-screen flex flex-col bg-navy-950">
       <Navbar />
       <main className="flex-grow">
         <Routes>
