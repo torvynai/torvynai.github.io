@@ -6,7 +6,7 @@ import './styles/globals.css'
 
 function App() {
   return (
-    <BrowserRouter basename="/torvynai.github.io">
+    <BrowserRouter>
       <Router />
     </BrowserRouter>
   )
