@@ -117,9 +117,6 @@ export default function About() {
                   alt="Shivam Kumar"
                   className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-cyan-500/20"
                 />
-                <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center border-4 border-navy-800">
-                  <Award className="text-white" size={18} />
-                </div>
               </div>
 
               <h4 className="font-bold text-2xl mb-2 text-white">Shivam Kumar</h4>
@@ -146,9 +143,6 @@ export default function About() {
                   alt="Yogendra"
                   className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gold-500/20"
                 />
-                <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-accent rounded-full flex items-center justify-center border-4 border-navy-800">
-                  <Users className="text-white" size={18} />
-                </div>
               </div>
 
               <h4 className="font-bold text-2xl mb-2 text-white">Yogendra</h4>
