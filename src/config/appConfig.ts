@@ -120,8 +120,10 @@ const appConfig = {
 
   // Trust metrics
   metrics: [
-    { label: 'Time Saved', value: '80%' },
-    { label: 'Cost Reduction', value: '70%' }
+    { label: 'Faster Financial Close', value: '55%' },
+    { label: 'Time Saved with Reconciliations', value: '95%' },
+    { label: 'Quicker Audit Cycles', value: '34%' },
+    { label: 'Cost Reduction', value: '40%' }
   ],
 
   // Services can be re-introduced on the company website later if needed.

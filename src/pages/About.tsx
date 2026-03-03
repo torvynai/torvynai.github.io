@@ -270,9 +270,9 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { value: '80%', label: 'Average reduction in close cycle time' },
-              { value: '70%', label: 'Reduction in manual reconciliation hours' },
-              { value: '99.9%', label: 'Platform uptime commitment' }
+              { value: '55%', label: 'Faster financial close' },
+              { value: '95%', label: 'Time saved with reconciliations' },
+              { value: '34%', label: 'Quicker audit cycles' }
             ].map((metric, index) => (
               <motion.div
                 key={index}

@@ -68,7 +68,7 @@ export default function Navbar() {
             className="ml-4 btn-primary inline-flex items-center text-sm px-6 py-2.5"
           >
             <Sparkles size={16} className="mr-2" />
-            Request Demo
+            Book A Demo
           </Link>
         </nav>
 
@@ -112,7 +112,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Sparkles size={16} className="inline mr-2" />
-                Request Demo
+                Book A Demo
               </Link>
             </div>
           </motion.div>
