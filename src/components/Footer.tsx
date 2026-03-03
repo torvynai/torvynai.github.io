@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from 'lucide-react';
 import logoImage from '../assets/logo.png';
 import appConfig from '../config/appConfig';
 
@@ -20,22 +20,28 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/torvynai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/5 hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/30 flex items-center justify-center transition-all group"
               >
                 <Linkedin size={16} className="text-slate-400 group-hover:text-cyan-400" />
               </a>
               <a
-                href="#"
+                href="https://x.com/torvynai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/5 hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/30 flex items-center justify-center transition-all group"
               >
                 <Twitter size={16} className="text-slate-400 group-hover:text-cyan-400" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/torvyn.ai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/5 hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/30 flex items-center justify-center transition-all group"
               >
-                <Github size={16} className="text-slate-400 group-hover:text-cyan-400" />
+                <Instagram size={16} className="text-slate-400 group-hover:text-cyan-400" />
               </a>
             </div>
           </div>
