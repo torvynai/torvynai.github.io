@@ -75,14 +75,14 @@ export default function Home() {
             >
               <div
                 onClick={() => setIsVideoOpen(true)}
-                className="block mt-8 mb-12 relative max-w-5xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-navy-950/80 aspect-video flex flex-col items-center justify-center group cursor-pointer transition-transform hover:scale-[1.02]"
+                className="block mt-8 mb-12 relative max-w-5xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.15)] bg-navy-950/80 aspect-square sm:aspect-video flex flex-col items-center justify-center p-6 group cursor-pointer transition-transform hover:scale-[1.02]"
               >
                 <div className="absolute inset-0 grid-pattern opacity-30"></div>
-                <div className="z-10 bg-cyan-500/10 p-6 rounded-full border border-cyan-500/30 group-hover:bg-cyan-500/20 transition-all duration-300 shadow-[0_0_30px_rgba(6,182,212,0.4)] flex items-center justify-center">
-                  <Play className="w-12 h-12 text-cyan-400 ml-1" fill="currentColor" />
+                <div className="z-10 bg-cyan-500/10 p-4 md:p-6 rounded-full border border-cyan-500/30 group-hover:bg-cyan-500/20 transition-all duration-300 shadow-[0_0_30px_rgba(6,182,212,0.4)] flex items-center justify-center">
+                  <Play className="w-8 h-8 md:w-12 md:h-12 text-cyan-400 ml-1" fill="currentColor" />
                 </div>
-                <h3 className="mt-8 text-2xl md:text-3xl font-bold text-white z-10 text-center px-4">Watch Torvyn AI in Action</h3>
-                <p className="text-cyan-200 mt-3 z-10 text-lg font-medium text-center px-4">See how the AI seamlessly executes a Maker Task in real-time.</p>
+                <h3 className="mt-6 md:mt-8 text-xl md:text-3xl font-bold text-white z-10 text-center px-2">Watch Torvyn AI in Action</h3>
+                <p className="text-cyan-200 mt-2 md:mt-3 z-10 text-sm md:text-lg font-medium text-center max-w-2xl px-2">See how the AI seamlessly executes a Maker Task in real-time.</p>
               </div>
             </motion.div>
 
