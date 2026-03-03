@@ -54,13 +54,13 @@ const appConfig = {
         { label: 'Audit Ready', value: '100%', icon: 'shield' }
       ],
       features: [
-        'Live GSTN & Bank Verification APIs - Direct Government/Bank portal pings',
-        'Autonomous AI Agent - Matches PO vs GRN vs Invoice instantly',
-        'Maker-Checker-CFO Workflow - Strict Indian RBI compliant approval hierarchy',
-        'Direct SAP/Tally Connectors - Push journal entries without manual data entry',
-        'Glass Box Transparency - Full visibility into how the AI reached its conclusion',
-        'Multi-Tenant SaaS Isolation - Schema-per-tenant architecture for maximum security',
-        'Centralized Audit Trails - Permanent records of all document evidence and approvals'
+        'Live GSTN & Bank Verification APIs: Direct Government/Bank portal pings',
+        'Autonomous AI Agent: Matches PO vs GRN vs Invoice instantly',
+        'Maker-Checker-CFO Workflow: Strict Indian RBI compliant approval hierarchy',
+        'Direct SAP/Tally Connectors: Push journal entries without manual data entry',
+        'Glass Box Transparency: Full visibility into how the AI reached its conclusion',
+        'Multi-Tenant SaaS Isolation: Schema-per-tenant architecture for maximum security',
+        'Centralized Audit Trails: Permanent records of all document evidence and approvals'
       ],
     },
     {

@@ -268,7 +268,7 @@ export default function Home() {
               The <span className="gradient-text-gold">Complete Arsenal</span> for Finance Leaders
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              We do not just find errors—we fix them automatically. Discover the exact modules that will modernize your entire accounting department.
+              We do not just find errors, we fix them automatically. Discover the exact modules that will modernize your entire accounting department.
             </p>
           </motion.div>
 
