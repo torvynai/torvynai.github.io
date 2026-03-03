@@ -6,7 +6,8 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         if (hash) {
-            setTimeout(() => {
+            let retries = 0;
+            const tryScroll = () => {
                 const element = document.querySelector(hash);
                 if (element) {
                     const navbarOffset = 100;
@@ -16,8 +17,12 @@ export default function ScrollToTop() {
                         top: offsetPosition,
                         behavior: 'auto'
                     });
+                } else if (retries < 10) {
+                    retries++;
+                    setTimeout(tryScroll, 50);
                 }
-            }, 100);
+            };
+            setTimeout(tryScroll, 50);
         } else {
             window.scrollTo(0, 0);
         }

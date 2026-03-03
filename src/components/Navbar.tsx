@@ -64,7 +64,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            to="/contact"
+            to="/contact#demo-form"
             className="ml-4 btn-primary inline-flex items-center text-sm px-6 py-2.5"
           >
             <Sparkles size={16} className="mr-2" />
@@ -107,7 +107,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                to="/contact"
+                to="/contact#demo-form"
                 className="block w-full btn-primary text-center mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >

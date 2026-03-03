@@ -89,7 +89,7 @@ export default function Home() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
               <Link
-                to="/contact"
+                to="/contact#demo-form"
                 className="btn-primary inline-flex items-center justify-center text-xl px-12 py-5 shadow-lg shadow-cyan-500/30"
               >
                 Book A Demo
@@ -410,7 +410,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col justify-center gap-4 max-w-md mx-auto">
               <Link
-                to="/contact"
+                to="/contact#demo-form"
                 className="btn-primary inline-flex items-center justify-center text-xl px-10 py-5 w-full shadow-lg shadow-cyan-500/30"
               >
                 Book A Demo
