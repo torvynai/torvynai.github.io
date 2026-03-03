@@ -429,23 +429,24 @@ export default function Home() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-10 backdrop-blur-md"
           >
-            <div className="relative w-full max-w-6xl aspect-video bg-navy-950 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_100px_rgba(6,182,212,0.3)]">
-              <button
-                onClick={() => setIsVideoOpen(false)}
-                className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/80 hover:text-red-400 text-white rounded-full transition-colors backdrop-blur-md"
-              >
-                <X size={24} />
-              </button>
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-4 right-4 md:top-8 md:right-8 z-[110] p-2 bg-white/10 hover:bg-white/20 hover:text-red-400 text-white rounded-full transition-colors backdrop-blur-md"
+            >
+              <X size={24} />
+            </button>
 
+            <div className="relative w-full max-w-6xl aspect-video bg-navy-950 rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_100px_rgba(6,182,212,0.3)] mt-8 md:mt-0">
               <video
                 controls
                 autoPlay
+                playsInline
                 className="w-full h-full object-cover bg-black"
                 src="https://www.w3schools.com/html/mov_bbb.mp4"
               >
                 Your browser does not support playing this video.
               </video>
-              <div className="absolute top-4 left-4 z-10 px-4 py-2 bg-black/60 border border-cyan-500/50 text-cyan-400 font-semibold rounded-lg text-sm backdrop-blur-md">
+              <div className="hidden md:block absolute top-4 left-4 z-10 px-4 py-2 bg-black/60 border border-cyan-500/50 text-cyan-400 font-semibold rounded-lg text-sm backdrop-blur-md">
                 Placeholder Video: Replace with your actual Maker Task screen-recording.
               </div>
             </div>
