@@ -148,7 +148,7 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="premium-card">
+              <div className="premium-card" id="demo-form">
                 <h2 className="text-3xl font-bold mb-6 text-white">Send us a Message</h2>
 
                 {!submitted ? (

@@ -306,10 +306,7 @@ body {
       transparent 100%);
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Selection */
 ::selection {
