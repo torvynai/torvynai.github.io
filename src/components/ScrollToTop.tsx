@@ -9,7 +9,13 @@ export default function ScrollToTop() {
             setTimeout(() => {
                 const element = document.querySelector(hash);
                 if (element) {
-                    element.scrollIntoView({ behavior: 'auto', block: 'start' });
+                    const navbarOffset = 100;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'auto'
+                    });
                 }
             }, 100);
         } else {
