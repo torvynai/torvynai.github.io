@@ -95,7 +95,7 @@ export default function About() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Leadership <span className="gradient-text-gold">Team</span>
+              Meet our <span className="gradient-text-gold">founders</span>
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               A unique combination of AI expertise and business acumen, driving innovation in financial automation.
@@ -120,7 +120,7 @@ export default function About() {
               </div>
 
               <h4 className="font-bold text-2xl mb-2 text-white">Shivam Kumar</h4>
-              <p className="text-cyan-400 font-semibold mb-4">Founder, CEO & Chief Technology Officer</p>
+              <p className="text-cyan-400 font-semibold mb-4">Director, CEO, CTO</p>
 
               <div className="space-y-2 text-sm text-slate-300 bg-white/5 p-4 rounded-lg">
                 <p className="font-semibold text-cyan-400">🎓 AI Graduate, IIT Gandhinagar</p>
@@ -146,7 +146,7 @@ export default function About() {
               </div>
 
               <h4 className="font-bold text-2xl mb-2 text-white">Yogendra</h4>
-              <p className="text-gold-400 font-semibold mb-4">Head of Product</p>
+              <p className="text-gold-400 font-semibold mb-4">Director, Head of Product</p>
 
               <div className="space-y-2 text-sm text-slate-300 bg-white/5 p-4 rounded-lg">
                 <p className="font-semibold text-gold-400">🎓 Bachelor of Business Administration</p>
@@ -179,7 +179,7 @@ export default function About() {
             <div className="glass-card p-12 rounded-2xl max-w-5xl mx-auto border-2 border-cyan-500/20">
               <p className="text-2xl leading-relaxed text-slate-200">
                 We envision finance teams empowered by AI that is <span className="text-cyan-400 font-semibold">transparent</span>,
-                <span className="text-cyan-400 font-semibold"> auditable</span>, and <span className="text-cyan-400 font-semibold">reduces cycle times</span>—so
+                <span className="text-cyan-400 font-semibold"> auditable</span>, and <span className="text-cyan-400 font-semibold">reduces cycle times</span> so
                 businesses can make faster, better-informed decisions. Financial close should be a
                 <span className="text-gold-400 font-semibold"> competitive advantage</span>, not a bottleneck.
               </p>

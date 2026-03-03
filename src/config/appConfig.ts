@@ -33,37 +33,34 @@ const appConfig = {
 
   products: [
     {
-      slug: 'balance-sheet-assurance',
-      name: 'Balance Sheet Assurance',
-      tagline: 'AI-powered platform for GL account reviews and month-end close',
-      description: 'A comprehensive solution that transforms how finance teams manage General Ledger account reviews through intelligent task management, AI-powered insights, and structured Maker-Checker-CFO workflows with complete audit trails.',
-      problemStatement: 'Finance teams face manual GL reviews using spreadsheets, limited visibility, incomplete audit trails, and extended close cycles creating compliance risk',
-      url: 'https://balance-sheet-assurance.torvynai.com',
+      slug: 'agentic-erp-reconciliation',
+      name: 'Agentic ERP Reconciliation',
+      tagline: 'AI-powered 3-way matching and automated journal entries',
+      description: 'A comprehensive solution that plugs straight into Tally & SAP. Our AI autonomous agent verifies GST against government portals, matches bank statement feeds, and prepares precise journal entries with Maker-Checker-CFO governance.',
+      problemStatement: 'Finance teams waste weeks manually matching bank statements and chasing vendor GST discrepancies, leading to lost Input Tax Credit (ITC) and delayed month-end closes.',
+      url: 'https://app.torvynai.com',
       icon: 'balance',
       status: 'live' as ProductStatus,
       outcomes: [
-        'Reduce close cycle time through automated task generation and workflows',
-        'AI-powered variance analysis identifies high-risk items requiring attention',
-        'Complete audit trail with centralized document management',
-        'Real-time dashboards showing review progress and bottlenecks',
-        'Executive AI chatbot for instant CFO queries on review status'
+        'Close books in days rather than weeks with zero-touch ERP posting',
+        'Stop losing Input Tax Credit (ITC) by automatically fetching 2A/2B GSTN data',
+        'Clear massive transaction backlogs via live Bank Feed integrations',
+        'Ensure 100% RBI & SOX compliance using strict Glass Box governance',
+        'Executive CFO Dashboard with conversational AI for real-time risk analysis'
       ],
       metrics: [
         { label: 'Time Saved', value: '80%', icon: 'clock' },
-        { label: 'Error Reduction', value: '95%+', icon: 'check' },
+        { label: 'Error Reduction', value: '99%+', icon: 'check' },
         { label: 'Audit Ready', value: '100%', icon: 'shield' }
       ],
       features: [
-        'Intelligent Task Management - Automatic generation and smart assignment',
-        'AI-Powered Insights - Variance analysis, risk identification, key findings',
-        'Maker-Checker-CFO Workflow - Structured approval hierarchy with accountability',
-        'SAP Integration - Automated data extraction for enhanced AI analysis',
-        'Smart Email Notifications - AI-enriched emails with variance analysis and recommendations',
-        'Executive AI Dashboard - Visual analytics and conversational chatbot for CFO',
-        'Document Management - Centralized storage with version tracking',
-        'Adaptive Change Management - Auto re-analysis when GL data changes post-audit',
-        'Complete Audit Trail - Full tracking of all reviews, approvals, and changes',
-        'Zero-Touch User Registration - Automatic user setup from master data'
+        'Live GSTN & Bank Verification APIs - Direct Government/Bank portal pings',
+        'Autonomous AI Agent - Matches PO vs GRN vs Invoice instantly',
+        'Maker-Checker-CFO Workflow - Strict Indian RBI compliant approval hierarchy',
+        'Direct SAP/Tally Connectors - Push journal entries without manual data entry',
+        'Glass Box Transparency - Full visibility into how the AI reached its conclusion',
+        'Multi-Tenant SaaS Isolation - Schema-per-tenant architecture for maximum security',
+        'Centralized Audit Trails - Permanent records of all document evidence and approvals'
       ],
     },
     {
@@ -100,18 +97,18 @@ const appConfig = {
   // Company values
   values: [
     {
-      title: 'Security First',
-      description: 'On-premise deployment ensures your data never leaves your infrastructure',
+      title: 'Enterprise Security',
+      description: 'Multi-tenant Cloud SaaS architecture with strict schema-per-tenant data isolation.',
       icon: 'shield'
     },
     {
       title: 'AI Expertise',
-      description: 'Built by team of IITians with deep expertise in AI and finance',
+      description: 'Built by a team of IITians with deep expertise in AI, NLP, and Indian enterprise finance.',
       icon: 'brain'
     },
     {
-      title: 'ERP Integration',
-      description: 'Seamless connectors for SAP, Oracle, and other major ERP systems',
+      title: 'Zero-Touch ERP Integration',
+      description: 'Seamless live API connectors for SAP, Tally, Bank Feeds, and the GSTN portal.',
       icon: 'link'
     },
     {

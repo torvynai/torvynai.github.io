@@ -42,8 +42,7 @@ export default function Contact() {
               Let's <span className="gradient-text">Transform</span> Your Financial Operations
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
-              Schedule a demo, discuss your challenges, or learn more about our AI solutions.
-              We typically respond within one business day.
+              Schedule a technical demo of the Torvyn AI Glass Box Agent and learn how to automate your manual ERP operations.
             </p>
           </motion.div>
         </div>
@@ -198,25 +197,6 @@ export default function Contact() {
 
                     <div>
                       <label className="block text-sm font-semibold text-slate-300 mb-2">
-                        Inquiry Type <span className="text-red-400">*</span>
-                      </label>
-                      <select
-                        name="inquiry"
-                        value={form.inquiry}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-3 bg-navy-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white transition-all"
-                      >
-                        <option value="demo">Request Product Demo</option>
-                        <option value="sales">Enterprise Sales</option>
-                        <option value="partnership">Partnership Opportunity</option>
-                        <option value="support">Technical Support</option>
-                        <option value="general">General Inquiry</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-slate-300 mb-2">
                         Message <span className="text-red-400">*</span>
                       </label>
                       <textarea
@@ -226,7 +206,7 @@ export default function Contact() {
                         required
                         rows={6}
                         className="w-full px-4 py-3 bg-navy-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none text-white placeholder-slate-500 transition-all"
-                        placeholder="Tell us about your financial close process, challenges, and goals..."
+                        placeholder="Tell us about your current ERP setup, the volume of monthly transactions, and your biggest reconciliation headaches..."
                       />
                     </div>
 
@@ -257,9 +237,8 @@ export default function Contact() {
                           <span className="font-semibold text-cyan-400">{form.email}</span> within one business day.
                         </p>
                         <p className="text-sm text-slate-400">
-                          In the meantime, feel free to explore our{' '}
-                          <a href="/products" className="text-cyan-400 hover:underline">products</a> or{' '}
-                          <a href="/about" className="text-cyan-400 hover:underline">learn more about us</a>.
+                          In the meantime, feel free to{' '}
+                          <a href="/about" className="text-cyan-400 hover:underline">learn more about our team of IITians</a>.
                         </p>
                       </div>
                     </div>

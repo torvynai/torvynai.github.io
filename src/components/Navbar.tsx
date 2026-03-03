@@ -20,7 +20,6 @@ export default function Navbar() {
 
   const navLinks = [
     { to: '/', name: 'Home' },
-    { to: '/products', name: 'Products' },
     { to: '/about', name: 'About' },
     { to: '/contact', name: 'Contact' },
   ];
@@ -35,7 +34,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0 group">
-          <div className="flex flex-col gap-0.5">
+          <div className="flex flex-col items-start gap-0.5">
             <img
               src={logoImage}
               alt="Torvyn AI"
