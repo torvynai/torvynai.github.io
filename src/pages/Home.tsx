@@ -205,54 +205,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Torvyn AI Section */}
-      <section className="py-20 md:py-28 bg-navy-950 relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold-500 rounded-full blur-3xl"></div>
-        </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Why <span className="gradient-text">Torvyn AI</span>?
-            </h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              We combine academic excellence with real-world financial expertise to deliver
-              enterprise-grade AI solutions you can trust.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {appConfig.values.map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="premium-card text-center"
-              >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-primary mb-4">
-                  {value.icon === 'shield' && <Shield className="text-white" size={28} />}
-                  {value.icon === 'brain' && <Brain className="text-white" size={28} />}
-                  {value.icon === 'link' && <Link2 className="text-white" size={28} />}
-                  {value.icon === 'users' && <Users className="text-white" size={28} />}
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">{value.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{value.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Core Platform Functionalities */}
       <section className="py-20 md:py-28 bg-navy-900 border-t border-slate-800">
