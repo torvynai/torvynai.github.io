@@ -120,9 +120,9 @@ const appConfig = {
 
   // Trust metrics
   metrics: [
-    { label: 'Faster Financial Close', value: '55%' },
-    { label: 'Time Saved with Reconciliations', value: '95%' },
-    { label: 'Quicker Audit Cycles', value: '34%' },
+    { label: 'Faster Financial Close', value: 'Up to 55%' },
+    { label: 'Less Manual Reconciliation Work', value: 'Up to 95%' },
+    { label: 'Faster Audit Preparation', value: 'Up to 40%' },
     // { label: 'Cost Reduction', value: '40%' }
   ],
 
@@ -131,4 +131,3 @@ const appConfig = {
 };
 
 export default appConfig;
-
