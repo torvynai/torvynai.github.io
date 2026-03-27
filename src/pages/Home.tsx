@@ -36,9 +36,24 @@ export default function Home() {
       image: '/screenshots/maker_task_overlay.png'
     },
     {
-      title: 'CFO Oversight',
-      caption: 'Executive review, risk visibility, and final close control in one system.',
+      title: 'Checker Review Desk',
+      caption: 'Role-based review, return, and approval flow with the same enterprise scan pattern.',
+      image: '/screenshots/checker_desk.png'
+    },
+    {
+      title: 'CFO Analytics',
+      caption: 'Executive signals, financial impact, and attention items for sign-off control.',
       image: '/screenshots/cfo_analytics.png'
+    },
+    {
+      title: 'CFO Task Desk',
+      caption: 'Final approval queue with role-specific notes, review context, and sign-off control.',
+      image: '/screenshots/cfo_desk.png'
+    },
+    {
+      title: 'CFO Chatbot',
+      caption: 'Ask period-close questions, drill into risk, and interpret the numbers quickly.',
+      image: '/screenshots/cfo_chatbot.png'
     }
   ];
 
