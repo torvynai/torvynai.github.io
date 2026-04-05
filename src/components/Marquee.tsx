@@ -14,7 +14,6 @@ const Marquee: React.FC<MarqueeProps> = ({ children, speed = 20 }) => {
       >
         <motion.div
           className="flex"
-          whileHover={{ paused: true }}
           animate={{
             x: ['0%', '-100%'],
             transition: {

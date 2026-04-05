@@ -16,7 +16,7 @@ export default function Footer() {
               <img src={logoImage} alt="Torvyn AI" className="h-8 w-auto" />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              {appConfig.description}
+              ERP-first AI maker assistant for financial close, built for Indian enterprise workflows with human-approved execution.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -50,16 +50,26 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-bold text-white mb-4 text-sm uppercase tracking-wide">Company</h4>
+            <h4 className="font-bold text-white mb-4 text-sm uppercase tracking-wide">Explore</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/about" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  About Us
+                <Link to="/" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  Product
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Contact
+                <Link to="/about" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  Why Torvyn
+                </Link>
+              </li>
+              <li>
+                <Link to="/docs" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact#demo-form" className="text-slate-400 hover:text-cyan-400 transition-colors">
+                  Book a Demo
                 </Link>
               </li>
             </ul>

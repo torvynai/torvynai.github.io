@@ -1,50 +1,100 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Zap, Shield, Lightbulb, Award, TrendingUp, Users } from 'lucide-react';
+import { Award, Building2, CheckCircle2, Shield, Users, Workflow } from 'lucide-react';
 import appConfig from '../config/appConfig';
 import shivamKumarImg from '../assets/shivam_kumar.jpeg';
 import yogendraImg from '../assets/yogendra.jpeg';
 
+const operatingPrinciples = [
+  {
+    title: 'Built for enterprise adoption',
+    description:
+      'Torvyn is being shaped to land inside real finance teams, not just look impressive in a product demo.',
+    icon: <CheckCircle2 size={24} />,
+  },
+  {
+    title: 'Indian enterprise fit',
+    description:
+      'ERP data is primary, but Indian close also depends on schedules, PDFs, scans, challans, approvals, and reviewer governance.',
+    icon: <Building2 size={24} />,
+  },
+  {
+    title: 'Human-approved AI',
+    description:
+      'Torvyn is designed to move the maker from doer to action approver while keeping checker and CFO control intact.',
+    icon: <Workflow size={24} />,
+  },
+  {
+    title: 'Trust through visibility',
+    description:
+      'Evidence, notes, recommendations, and approvals should remain visible and auditable across the workflow.',
+    icon: <Shield size={24} />,
+  },
+];
+
+const founderProfiles = [
+  {
+    name: 'Shivam Kumar',
+    role: 'Director, CEO, CTO',
+    image: shivamKumarImg,
+    accent: 'text-cyan-400',
+    border: 'border-cyan-500/20',
+    highlights: [
+      'AI graduate from IIT Gandhinagar',
+      'Two-time national AI hackathon winner',
+      'Focused on building explainable AI products for enterprise workflows',
+    ],
+  },
+  {
+    name: 'Yogendra',
+    role: 'Director, Head of Product',
+    image: yogendraImg,
+    accent: 'text-gold-400',
+    border: 'border-gold-500/20',
+    highlights: [
+      'Business and operator-led product leadership',
+      '25+ years of experience in the service industry',
+      'Focused on practical rollout, buyer trust, and operating discipline',
+    ],
+  },
+];
+
 export default function About() {
   useEffect(() => {
-    document.title = `${appConfig.companyName} - About Us`;
+    document.title = `${appConfig.companyName} - Why Torvyn`;
   }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-navy-950">
       <section className="gradient-hero py-20 md:py-28 text-white relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 grid-pattern opacity-20"></div>
+        <div className="absolute inset-0 grid-pattern opacity-20" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center gap-2 mb-6">
-              <div className="trust-badge">
-                <Award size={16} />
-                <span>An IITians Venture</span>
-              </div>
+            <div className="inline-flex items-center gap-2 mb-6 trust-badge">
+              <Award size={16} />
+              <span>Built in India • IITians venture</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About <span className="gradient-text">Torvyn AI</span>
+              Why <span className="gradient-text">Torvyn AI</span> exists
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
-              Transforming financial operations with trusted, explainable AI built by experts
-              who understand both technology and finance.
+              We are building Torvyn for Indian enterprise finance teams that want faster close movement,
+              stronger control, and a product they will actually want to use.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Mission & Why Section */}
-      <section className="py-20 md:py-28 bg-navy-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="py-20 md:py-24 bg-navy-950">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -53,13 +103,12 @@ export default function About() {
               className="premium-card"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-primary mb-4">
-                <TrendingUp className="text-white" size={24} />
+                <Users className="text-white" size={24} />
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-white">Our Mission</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">Our point of view</h2>
               <p className="text-slate-300 leading-relaxed text-lg">
-                To enable finance teams to close faster and with higher confidence using explainable AI,
-                automation, and enterprise-grade controls. We believe financial operations should be a
-                competitive advantage, not a bottleneck.
+                Enterprise close is not just reconciliation logic. It is execution, evidence, reviewer flow, and decision support.
+                Torvyn is being built to bring those pieces together in one product that feels useful from day one.
               </p>
             </motion.div>
 
@@ -71,219 +120,100 @@ export default function About() {
               className="premium-card bg-gradient-to-br from-cyan-500/5 to-gold-500/5"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-accent mb-4">
-                <Zap className="text-white" size={24} />
+                <Workflow className="text-white" size={24} />
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-white">Why Torvyn Exists</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">What we are building</h2>
               <p className="text-slate-300 leading-relaxed text-lg">
-                Close processes remain manual, time-consuming, and error-prone in many large organizations.
-                Torvyn automates the repetitive tasks and provides AI-driven context so teams can focus on
-                decisions, not data wrangling.
+                Torvyn combines maker-agent execution, reviewer workflow, CFO analytics, and chatbot support into one close workspace.
+                The ambition is simple: help finance teams move faster and make the product strong enough that it earns a place in the close cycle.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-20 md:py-28 bg-navy-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-24 bg-navy-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-14"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Meet our <span className="gradient-text-gold">founders</span>
+              Operating principles behind the product
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              A unique combination of AI expertise and business acumen, driving innovation in financial automation.
+              These are the rules we want buyers to feel when they use Torvyn, not just read in a pitch deck.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ y: -8 }}
-              className="premium-card text-center"
-            >
-              <div className="relative inline-block mb-6">
-                <img
-                  src={shivamKumarImg}
-                  alt="Shivam Kumar"
-                  className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-cyan-500/20"
-                />
-              </div>
-
-              <h4 className="font-bold text-2xl mb-2 text-white">Shivam Kumar</h4>
-              <p className="text-cyan-400 font-semibold mb-4">Director, CEO, CTO</p>
-
-              <div className="space-y-2 text-sm text-slate-300 bg-white/5 p-4 rounded-lg">
-                <p className="font-semibold text-cyan-400">🎓 AI Graduate, IIT Gandhinagar</p>
-                <p>🏆 Two-time National AI Hackathon Winner</p>
-                <p>⭐ Innovative Project Awardee</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              whileHover={{ y: -8 }}
-              className="premium-card text-center"
-            >
-              <div className="relative inline-block mb-6">
-                <img
-                  src={yogendraImg}
-                  alt="Yogendra"
-                  className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gold-500/20"
-                />
-              </div>
-
-              <h4 className="font-bold text-2xl mb-2 text-white">Yogendra</h4>
-              <p className="text-gold-400 font-semibold mb-4">Director, Head of Product</p>
-
-              <div className="space-y-2 text-sm text-slate-300 bg-white/5 p-4 rounded-lg">
-                <p className="font-semibold text-gold-400">🎓 Bachelor of Business Administration</p>
-                <p>💼 Experienced in running companies</p>
-                <p>📈 25+ years in service industry</p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Section */}
-      <section className="py-20 md:py-28 bg-navy-950 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              Our <span className="gradient-text">Vision</span>
-            </h2>
-
-            <div className="glass-card p-12 rounded-2xl max-w-5xl mx-auto border-2 border-cyan-500/20">
-              <p className="text-2xl leading-relaxed text-slate-200">
-                We envision finance teams empowered by AI that is <span className="text-cyan-400 font-semibold">transparent</span>,
-                <span className="text-cyan-400 font-semibold"> auditable</span>, and <span className="text-cyan-400 font-semibold">reduces cycle times</span> so
-                businesses can make faster, better-informed decisions. Financial close should be a
-                <span className="text-gold-400 font-semibold"> competitive advantage</span>, not a bottleneck.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="py-20 md:py-28 bg-navy-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Our <span className="gradient-text-gold">Values</span>
-            </h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              The principles that guide everything we build and every decision we make.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: <Lightbulb size={32} />,
-                title: 'Transparency',
-                description: 'Clear reasoning, explainable AI, and auditable outputs at every step.'
-              },
-              {
-                icon: <Shield size={32} />,
-                title: 'Reliability',
-                description: 'Built for enterprise uptime, compliance, and service-level agreements.'
-              },
-              {
-                icon: <Zap size={32} />,
-                title: 'Innovation',
-                description: 'Continuous investment in models, automation, and finance tech advancement.'
-              },
-              {
-                icon: <CheckCircle2 size={32} />,
-                title: 'Security',
-                description: 'Data protection as a foundation of architecture and design.'
-              }
-            ].map((value, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {operatingPrinciples.map((item, index) => (
               <motion.div
-                key={index}
+                key={item.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="premium-card text-center"
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="premium-card"
               >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-primary mb-4">
-                  <div className="text-white">
-                    {value.icon}
-                  </div>
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 mb-4 text-cyan-400">
+                  {item.icon}
                 </div>
-                <h3 className="font-bold text-xl mb-3 text-white">{value.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{value.description}</p>
+                <h3 className="font-bold text-2xl mb-3 text-white">{item.title}</h3>
+                <p className="text-slate-400 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Impact Metrics */}
-      <section className="py-20 md:py-28 bg-navy-950">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-24 bg-navy-950">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-14"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Our <span className="gradient-text">Impact</span>
+              Meet the founders
             </h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Real results delivered to finance teams using Torvyn AI solutions.
+              Early-stage enterprise buyers want to know who is building the product and who will stand behind it during rollout.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { value: '55%', label: 'Faster financial close' },
-              { value: '95%', label: 'Time saved with reconciliations' },
-              { value: '34%', label: 'Quicker audit cycles' }
-            ].map((metric, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {founderProfiles.map((profile, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                key={profile.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                whileHover={{ y: -8 }}
                 className="premium-card text-center"
               >
-                <div className="metric-value mb-4">{metric.value}</div>
-                <p className="text-slate-400 text-lg">{metric.label}</p>
+                <div className="relative inline-block mb-6">
+                  <img
+                    src={profile.image}
+                    alt={profile.name}
+                    className={`w-32 h-32 rounded-full mx-auto object-cover border-4 ${profile.border}`}
+                  />
+                </div>
+
+                <h4 className="font-bold text-2xl mb-2 text-white">{profile.name}</h4>
+                <p className={`${profile.accent} font-semibold mb-4`}>{profile.role}</p>
+
+                <div className="space-y-2 text-sm text-slate-300 bg-white/5 p-4 rounded-lg text-left">
+                  {profile.highlights.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                </div>
               </motion.div>
             ))}
           </div>

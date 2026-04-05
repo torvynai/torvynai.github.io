@@ -21,6 +21,8 @@ export type Product = ProductInfo & {
   features: string[];
 };
 
+export type Service = Product;
+
 const appConfig = {
   companyName: 'Torvyn AI',
   productName: 'Torvyn AI',
@@ -28,8 +30,8 @@ const appConfig = {
   contactEmail: 'torvynai@gmail.com',
   phone: '+91-9027167486',
   websiteUrl: 'https://www.torvynai.com',
-  tagline: 'Transform Financial Operations with AI-Powered Automation',
-  description: 'Deep-tech AI solutions for financial automation, built by team of IITians',
+  tagline: 'ERP-first AI maker assistant for controlled financial close',
+  description: 'Built in India for enterprise finance teams that need faster close execution with maker-checker-CFO control.',
 
   products: [
     {
@@ -49,9 +51,9 @@ const appConfig = {
         'Executive CFO Dashboard with conversational AI for real-time risk analysis'
       ],
       metrics: [
-        { label: 'Time Saved', value: '80%', icon: 'clock' },
-        { label: 'Error Reduction', value: '99%+', icon: 'check' },
-        { label: 'Audit Ready', value: '100%', icon: 'shield' }
+        { label: 'Supported Close Speedup', value: '50-60%', icon: 'clock' },
+        { label: 'Manual Maker Effort Cut', value: 'Up to 95%', icon: 'check' },
+        { label: 'Approval Control', value: 'Maker → Checker → CFO', icon: 'shield' }
       ],
       features: [
         'Live GSTN & Bank Verification APIs: Direct Government/Bank portal pings',
@@ -98,17 +100,17 @@ const appConfig = {
   values: [
     {
       title: 'Enterprise Security',
-      description: 'Multi-tenant Cloud SaaS architecture with strict schema-per-tenant data isolation.',
+      description: 'Enterprise security posture with workflow control, audit visibility, and implementation discipline.',
       icon: 'shield'
     },
     {
       title: 'AI Expertise',
-      description: 'Built by a team of IITians with deep expertise in AI, NLP, and Indian enterprise finance.',
+      description: 'Built by a team with AI depth and strong conviction around Indian enterprise finance workflows.',
       icon: 'brain'
     },
     {
       title: 'Zero-Touch ERP Integration',
-      description: 'Seamless live API connectors for SAP, Tally, Bank Feeds, and the GSTN portal.',
+      description: 'ERP-first product direction with SAP, Tally, and close-system integration as the primary operating model.',
       icon: 'link'
     },
     {
@@ -120,14 +122,14 @@ const appConfig = {
 
   // Trust metrics
   metrics: [
-    { label: 'Faster Financial Close', value: 'Up to 55%' },
-    { label: 'Less Manual Reconciliation Work', value: 'Up to 95%' },
-    { label: 'Faster Audit Preparation', value: 'Up to 40%' },
+    { label: 'Supported Close Speedup', value: 'Up to 60%' },
+    { label: 'Less Manual Maker Work', value: 'Up to 95%' },
+    { label: 'Faster Review Packaging', value: 'Up to 40%' },
     // { label: 'Cost Reduction', value: '40%' }
   ],
 
   // Services can be re-introduced on the company website later if needed.
-  services: [],
+  services: [] as Service[],
 };
 
 export default appConfig;

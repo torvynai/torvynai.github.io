@@ -19,10 +19,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { to: '/', name: 'Home' },
-    { to: '/about', name: 'About' },
-    { to: '/docs', name: 'Docs' },
-    { to: '/contact', name: 'Contact' },
+    { to: '/', name: 'Product' },
+    { to: '/about', name: 'Why Torvyn' },
+    { to: '/docs', name: 'Resources' },
   ];
 
   return (
@@ -41,7 +40,7 @@ export default function Navbar() {
               alt="Torvyn AI"
               className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />
-            <div className="text-xs text-cyan-400 font-medium">An IITians Venture</div>
+            <div className="text-xs text-cyan-400 font-medium">Built in India • An IITians venture</div>
           </div>
         </Link>
 
@@ -64,13 +63,13 @@ export default function Navbar() {
               )}
             </Link>
           ))}
-          <Link
-            to="/contact#demo-form"
-            className="ml-4 btn-primary inline-flex items-center text-sm px-6 py-2.5"
-          >
-            <Sparkles size={16} className="mr-2" />
-            Book A Demo
-          </Link>
+            <Link
+              to="/contact#demo-form"
+              className="ml-4 btn-primary inline-flex items-center text-sm px-6 py-2.5"
+            >
+              <Sparkles size={16} className="mr-2" />
+              Book A Demo
+            </Link>
         </nav>
 
         {/* Mobile Menu Button */}
